@@ -1,0 +1,143 @@
+Test: div_convert (104, 5) -> Expected: "404", Got: "404" [PASS]
+Test: div_convert (156, 8) -> Expected: "234", Got: "234" [PASS]
+Test: div_convert (255, 16) -> Expected: "FF", Got: "FF" [PASS]
+Test: div_convert (255, 10) -> Expected: "255", Got: "255" [PASS]
+Test: div_convert (255, 2) -> Expected: "11111111", Got: "11111111" [PASS]
+Test: div_convert (42, 2) -> Expected: "101010", Got: "101010" [PASS]
+Test: div_convert (0, 2) -> Expected: "0", Got: "0" [PASS]
+Test: div_convert (0, 8) -> Expected: "0", Got: "0" [PASS]
+Test: div_convert (0, 10) -> Expected: "0", Got: "0" [PASS]
+Test: div_convert (0, 16) -> Expected: "0", Got: "0" [PASS]
+Test: div_convert (1, 2) -> Expected: "1", Got: "1" [PASS]
+Test: div_convert (1, 8) -> Expected: "1", Got: "1" [PASS]
+Test: div_convert (1, 16) -> Expected: "1", Got: "1" [PASS]
+Test: div_convert (8, 2) -> Expected: "1000", Got: "1000" [PASS]
+Test: div_convert (16, 2) -> Expected: "10000", Got: "10000" [PASS]
+Test: div_convert (64, 8) -> Expected: "100", Got: "100" [PASS]
+Test: div_convert (256, 16) -> Expected: "100", Got: "100" [PASS]
+Test: div_convert (4294967295, 2) -> Expected: "11111111111111111111111111111111", Got: "11111111111111111111111111111111" [PASS]
+Test: div_convert (4294967295, 8) -> Expected: "37777777777", Got: "37777777777" [PASS]
+Test: div_convert (4294967295, 10) -> Expected: "4294967295", Got: "4294967295" [PASS]
+Test: div_convert (4294967295, 16) -> Expected: "FFFFFFFF", Got: "FFFFFFFF" [PASS]
+Test: div_convert (42, 5) -> Expected: "132", Got: "132" [PASS]
+Test: div_convert (42, 8) -> Expected: "52", Got: "52" [PASS]
+Test: div_convert (42, 10) -> Expected: "42", Got: "42" [PASS]
+Test: div_convert (42, 16) -> Expected: "2A", Got: "2A" [PASS]
+Test: sub_convert (104, 5) -> Expected: "404", Got: "404" [PASS]
+Test: sub_convert (156, 8) -> Expected: "234", Got: "234" [PASS]
+Test: sub_convert (255, 16) -> Expected: "FF", Got: "FF" [PASS]
+Test: sub_convert (255, 10) -> Expected: "255", Got: "255" [PASS]
+Test: sub_convert (255, 2) -> Expected: "11111111", Got: "11111111" [PASS]
+Test: sub_convert (42, 2) -> Expected: "101010", Got: "101010" [PASS]
+Test: sub_convert (0, 2) -> Expected: "0", Got: "0" [PASS]
+Test: sub_convert (0, 8) -> Expected: "0", Got: "0" [PASS]
+Test: sub_convert (0, 10) -> Expected: "0", Got: "0" [PASS]
+Test: sub_convert (0, 16) -> Expected: "0", Got: "0" [PASS]
+Test: sub_convert (1, 2) -> Expected: "1", Got: "1" [PASS]
+Test: sub_convert (1, 8) -> Expected: "1", Got: "1" [PASS]
+Test: sub_convert (1, 16) -> Expected: "1", Got: "1" [PASS]
+Test: sub_convert (8, 2) -> Expected: "1000", Got: "1000" [PASS]
+Test: sub_convert (16, 2) -> Expected: "10000", Got: "10000" [PASS]
+Test: sub_convert (64, 8) -> Expected: "100", Got: "100" [PASS]
+Test: sub_convert (256, 16) -> Expected: "100", Got: "100" [PASS]
+Test: sub_convert (4294967295, 2) -> Expected: "11111111111111111111111111111111", Got: "11111111111111111111111111111111" [PASS]
+Test: sub_convert (4294967295, 8) -> Expected: "37777777777", Got: "37777777777" [PASS]
+Test: sub_convert (4294967295, 10) -> Expected: "4294967295", Got: "4294967295" [PASS]
+Test: sub_convert (4294967295, 16) -> Expected: "FFFFFFFF", Got: "FFFFFFFF" [PASS]
+Test: sub_convert (42, 5) -> Expected: "132", Got: "132" [PASS]
+Test: sub_convert (42, 8) -> Expected: "52", Got: "52" [PASS]
+Test: sub_convert (42, 10) -> Expected: "42", Got: "42" [PASS]
+Test: sub_convert (42, 16) -> Expected: "2A", Got: "2A" [PASS]
+Test: div_convert (7, 2) -> Expected: "111", Got: "111" [PASS]
+Test: sub_convert (7, 2) -> Expected: "111", Got: "111" [PASS]
+Test: div_convert (15, 8) -> Expected: "17", Got: "17" [PASS]
+Test: sub_convert (15, 8) -> Expected: "17", Got: "17" [PASS]
+Test: div_convert (31, 16) -> Expected: "1F", Got: "1F" [PASS]
+Test: sub_convert (31, 16) -> Expected: "1F", Got: "1F" [PASS]
+Test: div_convert (1000, 2) -> Expected: "1111101000", Got: "1111101000" [PASS]
+Test: sub_convert (1000, 2) -> Expected: "1111101000", Got: "1111101000" [PASS]
+Test: div_convert (1000, 8) -> Expected: "1750", Got: "1750" [PASS]
+Test: sub_convert (1000, 8) -> Expected: "1750", Got: "1750" [PASS]
+Test: div_convert (1000, 16) -> Expected: "3E8", Got: "3E8" [PASS]
+Test: sub_convert (1000, 16) -> Expected: "3E8", Got: "3E8" [PASS]
+print_tables(5) -> [FORMATTED OUTPUT]
+Original: Binary=101 Octal=5 Decimal=5 Hex=5
+Left Shift by 3: Binary=101000 Octal=50 Decimal=40 Hex=28
+AND with 0xFF: Binary=101 Octal=5 Decimal=5 Hex=5
+print_tables(0) -> [FORMATTED OUTPUT]
+Original: Binary=0 Octal=0 Decimal=0 Hex=0
+Left Shift by 3: Binary=0 Octal=0 Decimal=0 Hex=0
+AND with 0xFF: Binary=0 Octal=0 Decimal=0 Hex=0
+print_tables(1) -> [FORMATTED OUTPUT]
+Original: Binary=1 Octal=1 Decimal=1 Hex=1
+Left Shift by 3: Binary=1000 Octal=10 Decimal=8 Hex=8
+AND with 0xFF: Binary=1 Octal=1 Decimal=1 Hex=1
+print_tables(7) -> [FORMATTED OUTPUT]
+Original: Binary=111 Octal=7 Decimal=7 Hex=7
+Left Shift by 3: Binary=111000 Octal=70 Decimal=56 Hex=38
+AND with 0xFF: Binary=111 Octal=7 Decimal=7 Hex=7
+print_tables(15) -> [FORMATTED OUTPUT]
+Original: Binary=1111 Octal=17 Decimal=15 Hex=F
+Left Shift by 3: Binary=1111000 Octal=170 Decimal=120 Hex=78
+AND with 0xFF: Binary=1111 Octal=17 Decimal=15 Hex=F
+print_tables(8) -> [FORMATTED OUTPUT]
+Original: Binary=1000 Octal=10 Decimal=8 Hex=8
+Left Shift by 3: Binary=1000000 Octal=100 Decimal=64 Hex=40
+AND with 0xFF: Binary=1000 Octal=10 Decimal=8 Hex=8
+print_tables(16) -> [FORMATTED OUTPUT]
+Original: Binary=10000 Octal=20 Decimal=16 Hex=10
+Left Shift by 3: Binary=10000000 Octal=200 Decimal=128 Hex=80
+AND with 0xFF: Binary=10000 Octal=20 Decimal=16 Hex=10
+print_tables(32) -> [FORMATTED OUTPUT]
+Original: Binary=100000 Octal=40 Decimal=32 Hex=20
+Left Shift by 3: Binary=100000000 Octal=400 Decimal=256 Hex=100
+AND with 0xFF: Binary=100000 Octal=40 Decimal=32 Hex=20
+print_tables(255) -> [FORMATTED OUTPUT]
+Original: Binary=11111111 Octal=377 Decimal=255 Hex=FF
+Left Shift by 3: Binary=11111111000 Octal=3770 Decimal=2040 Hex=7F8
+AND with 0xFF: Binary=11111111 Octal=377 Decimal=255 Hex=FF
+print_tables(256) -> [FORMATTED OUTPUT]
+Original: Binary=100000000 Octal=400 Decimal=256 Hex=100
+Left Shift by 3: Binary=100000000000 Octal=4000 Decimal=2048 Hex=800
+AND with 0xFF: Binary=0 Octal=0 Decimal=0 Hex=0
+print_tables(511) -> [FORMATTED OUTPUT]
+Original: Binary=111111111 Octal=777 Decimal=511 Hex=1FF
+Left Shift by 3: Binary=111111111000 Octal=7770 Decimal=4088 Hex=FF8
+AND with 0xFF: Binary=11111111 Octal=377 Decimal=255 Hex=FF
+print_tables(1000) -> [FORMATTED OUTPUT]
+Original: Binary=1111101000 Octal=1750 Decimal=1000 Hex=3E8
+Left Shift by 3: Binary=1111101000000 Octal=17500 Decimal=8000 Hex=1F40
+AND with 0xFF: Binary=11101000 Octal=350 Decimal=232 Hex=E8
+print_tables(65535) -> [FORMATTED OUTPUT]
+Original: Binary=1111111111111111 Octal=177777 Decimal=65535 Hex=FFFF
+Left Shift by 3: Binary=1111111111111111000 Octal=1777770 Decimal=524280 Hex=7FFF8
+AND with 0xFF: Binary=11111111 Octal=377 Decimal=255 Hex=FF
+print_tables(4294967295) -> [FORMATTED OUTPUT]
+Original: Binary=11111111111111111111111111111111 Octal=37777777777 Decimal=4294967295 Hex=FFFFFFFF
+Left Shift by 3: Binary=11111111111111111111111111111000 Octal=37777777770 Decimal=4294967288 Hex=FFFFFFF8
+AND with 0xFF: Binary=11111111 Octal=377 Decimal=255 Hex=FF
+Test: div_convert (2147483647, 2) -> Expected: "1111111111111111111111111111111", Got: "1111111111111111111111111111111" [PASS]
+Test: sub_convert (2147483647, 2) -> Expected: "1111111111111111111111111111111", Got: "1111111111111111111111111111111" [PASS]
+Test: div_convert (1073741824, 8) -> Expected: "10000000000", Got: "10000000000" [PASS]
+Test: sub_convert (1073741824, 8) -> Expected: "10000000000", Got: "10000000000" [PASS]
+Test: div_convert (268435456, 16) -> Expected: "10000000", Got: "10000000" [PASS]
+Test: sub_convert (268435456, 16) -> Expected: "10000000", Got: "10000000" [PASS]
+Test: div_convert (4294967294, 10) -> Expected: "4294967294", Got: "4294967294" [PASS]
+Test: sub_convert (4294967294, 10) -> Expected: "4294967294", Got: "4294967294" [PASS]
+Test: div_convert (4294967294, 16) -> Expected: "FFFFFFFE", Got: "FFFFFFFE" [PASS]
+Test: sub_convert (4294967294, 16) -> Expected: "FFFFFFFE", Got: "FFFFFFFE" [PASS]
+Test: div_convert (4, 5) -> Expected: "4", Got: "4" [PASS]
+Test: sub_convert (4, 5) -> Expected: "4", Got: "4" [PASS]
+Test: div_convert (7, 8) -> Expected: "7", Got: "7" [PASS]
+Test: sub_convert (7, 8) -> Expected: "7", Got: "7" [PASS]
+Test: div_convert (15, 16) -> Expected: "F", Got: "F" [PASS]
+Test: sub_convert (15, 16) -> Expected: "F", Got: "F" [PASS]
+Test: div_convert (25, 5) -> Expected: "100", Got: "100" [PASS]
+Test: sub_convert (25, 5) -> Expected: "100", Got: "100" [PASS]
+Test: div_convert (124, 5) -> Expected: "444", Got: "444" [PASS]
+Test: sub_convert (124, 5) -> Expected: "444", Got: "444" [PASS]
+Test: div_convert (171, 16) -> Expected: "AB", Got: "AB" [PASS]
+Test: sub_convert (171, 16) -> Expected: "AB", Got: "AB" [PASS]
+Test: div_convert (3405774592, 16) -> Expected: "CAFFFF00", Got: "CAFFFF00" [PASS]
+Test: sub_convert (3405774592, 16) -> Expected: "CAFFFF00", Got: "CAFFFF00" [PASS]
+Summary: 86/86 numeric tests passed
