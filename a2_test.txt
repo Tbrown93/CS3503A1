@@ -1,0 +1,126 @@
+# CS 3503 Assignment 2 Test Cases
+# Format: function_name input1 [input2] expected_output
+# Lines starting with # are comments
+# Empty lines are ignored
+#
+# NOTE: You are free to break these sections apart into separate files
+# or reorganize as needed for your testing approach. The TXT format was
+# chosen to give you experience with parsing various data formats you'll
+# encounter in systems programming.
+
+# =============================================================================
+# MAPPING METHOD TESTS - OCTAL TO BINARY (oct_to_bin)
+# =============================================================================
+
+# Basic mapping tests - mirrors original hand calculations
+oct_to_bin 725 111010101
+oct_to_bin 345 011100101
+oct_to_bin 777 111111111
+
+# Edge cases
+oct_to_bin 0 000
+oct_to_bin 1 001
+oct_to_bin 7 111
+
+# Single and multi-digit tests
+oct_to_bin 10 001000
+oct_to_bin 100 001000000
+oct_to_bin 377 011111111
+
+# =============================================================================
+# MAPPING METHOD TESTS - OCTAL TO HEX (oct_to_hex)
+# =============================================================================
+
+# Basic conversions via binary intermediate
+oct_to_hex 345 E5
+oct_to_hex 777 1FF
+oct_to_hex 100 40
+
+# Edge cases
+oct_to_hex 0 0
+oct_to_hex 1 1
+oct_to_hex 7 7
+
+# Multi-digit tests
+oct_to_hex 1234 29C
+oct_to_hex 7654 FAC
+
+# =============================================================================
+# MAPPING METHOD TESTS - HEX TO BINARY (hex_to_bin)
+# =============================================================================
+
+# Basic nibble mapping
+hex_to_bin A3 10100011
+hex_to_bin FF 11111111
+hex_to_bin 1A 00011010
+
+# Case insensitivity tests
+hex_to_bin a3 10100011
+hex_to_bin Ff 11111111
+hex_to_bin aC 10101100
+
+# Edge cases
+hex_to_bin 0 0000
+hex_to_bin 1 0001
+hex_to_bin F 1111
+
+# Multi-digit tests
+hex_to_bin CAFE 1100101011111110
+hex_to_bin 1234 0001001000110100
+
+# =============================================================================
+# SIGNED REPRESENTATION TESTS - SIGN MAGNITUDE (to_sign_magnitude)
+# =============================================================================
+
+# Positive numbers
+to_sign_magnitude 5 00000000000000000000000000000101
+to_sign_magnitude 1 00000000000000000000000000000001
+to_sign_magnitude 255 00000000000000000000000011111111
+
+# Negative numbers
+to_sign_magnitude -5 10000000000000000000000000000101
+to_sign_magnitude -1 10000000000000000000000000000001
+to_sign_magnitude -255 10000000000000000000000011111111
+
+# Zero - special case
+to_sign_magnitude 0 00000000000000000000000000000000
+
+# =============================================================================
+# SIGNED REPRESENTATION TESTS - ONE'S COMPLEMENT (to_ones_complement)
+# =============================================================================
+
+# Positive numbers (unchanged)
+to_ones_complement 5 00000000000000000000000000000101
+to_ones_complement 1 00000000000000000000000000000001
+to_ones_complement 255 00000000000000000000000011111111
+
+# Negative numbers (all bits flipped)
+to_ones_complement -5 11111111111111111111111111111010
+to_ones_complement -1 11111111111111111111111111111110
+to_ones_complement -255 11111111111111111111111100000000
+
+# Zero - special case
+to_ones_complement 0 00000000000000000000000000000000
+
+# =============================================================================
+# SIGNED REPRESENTATION TESTS - TWO'S COMPLEMENT (to_twos_complement)
+# =============================================================================
+
+# Positive numbers (unchanged)
+to_twos_complement 5 00000000000000000000000000000101
+to_twos_complement 1 00000000000000000000000000000001
+to_twos_complement 255 00000000000000000000000011111111
+
+# Negative numbers (one's complement + 1)
+to_twos_complement -5 11111111111111111111111111111011
+to_twos_complement -1 11111111111111111111111111111111
+to_twos_complement -255 11111111111111111111111100000001
+
+# Zero - special case
+to_twos_complement 0 00000000000000000000000000000000
+
+# Large values - test edge cases
+to_twos_complement 2147483647 01111111111111111111111111111111
+to_twos_complement -2147483648 10000000000000000000000000000000
+
+# End of test file
